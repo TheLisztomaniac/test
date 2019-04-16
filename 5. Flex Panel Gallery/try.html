@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title>DARN</title>
+</head>
+<body>
+
+<table class = "suggestions">
+	
+</table>
+
+<script>
+
+const datas = [
+	{"srno" : "1", "acyear" : "2018"},
+	{"srno" : "2", "acyear" : "2019"}
+];
+
+function fetch() {
+	
+	const html = datas.map(d => {
+		x = d.acyear % 100;
+		x++;
+		return `
+			<tr>
+				<td>${d.srno}</td/>
+				<td>${d.acyear}-${x}</td>
+				<td>
+					<button>Edit</button>
+					<button>Delete</button>
+				</td>
+			</tr>
+		`;
+	}).join('');
+	displayItem.innerHTML = html;
+}
+
+const displayItem = document.querySelector('.suggestions');
+
+fetch();
+
+</script>
+
+</body>
+</html>
