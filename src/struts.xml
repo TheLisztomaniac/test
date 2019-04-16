@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+
+<struts >
+
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.custom.i18n.resources" value="global" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+	<constant name="struts.configuration.xml.reload" value="true"></constant>
+	<constant name="struts.mapper.action.prefix.enabled" value="true"></constant>
+
+	<package name="default" namespace="/" extends="struts-default" strict-method-invocation="false">
+		
+		<action name="*SlotAcadTermCourse*" class="actions.ActionSlotAcadTermCourse" method="{1}SlotAcadTermCourse{2}">
+			<result name="success">/{1}SlotAcadTermCourse{2}.jsp</result>
+			<result name="done">/ecampus.jsp</result>
+		</action>
+		
+		<action name="*SlotAllotment*" class="actions.ActionSlotAllotment" method="{1}SlotAllotment{2}">
+			<result name="success">/{1}SlotAllotment{2}.jsp</result>
+			<result name="done">/ecampus.jsp</result>
+		</action>
+		
+		<action name="*AcadTermCourse*" class="actions.ActionAcadTermCourse" method="{1}AcadTermCourse{2}">
+			<result name="success">/{1}AcadTermCourse{2}.jsp</result>
+			<result name="done">/ecampus.jsp</result>
+		</action>
+		
+		<action name="*Program*" class="actions.ActionProgram" method="{1}Program{2}">
+			<result name="success">/{1}Program{2}.jsp</result>
+			<result name="done">/ecampus.jsp</result>
+		</action>
+		
+		<action name="*Course*" class="actions.ActionCourse" method="{1}Course{2}">
+			<result name="success">/{1}Course{2}.jsp</result>
+			<result name="done">/ecampus.jsp</result>
+		</action>
+		
+		<action name="*Student*" class="actions.ActionStudent" method="{1}Student{2}">
+			<result name="success">/{1}Student{2}.jsp</result>
+			<result name="register">/StudentRegistration.jsp</result>
+			<result name="result">/StudentGrade.jsp</result>
+			<result name="error_register">/errorRegister.jsp</result>
+			<result name="error_register_over">/errorRegistrationClose.jsp</result>
+			<result name="error_result">/errorResult.jsp</result>
+			<result name="done">/ecampus.jsp</result>
+		</action>
+		
+		<action name="*Term*" class="actions.ActionTerm" method="{1}Term{2}">
+			<result name="success">/{1}Term{2}.jsp</result>
+			<result name="done">/ecampus.jsp</result>
+		</action>
+		
+		<action name="*Year*" class="actions.ActionYear" method="{1}Year{2}">
+			<result name="success">/{1}Year{2}.jsp</result>
+			<result name="done">/ecampus.jsp</result>
+		</action>
+		
+		<action name="*Download*" class="actions.Action{2}" method="{1}Download{2}">
+			<result name="success" type="stream">
+				<param name="contentType">application/pdf</param>
+				<param name="inputName">inputStream</param>
+				<param name="contentDisposition">filename=fileName</param>
+				<param name="bufferSize">1024</param>
+			</result>
+		</action>
+		
+		<action name="*Batch*" class="actions.ActionBatch" method="{1}Batch{2}">
+			<result name="success">/{1}Batch{2}.jsp</result>
+			<result name="done">/ecampus.jsp</result>
+		</action>
+		
+		<action name="*Registrar*" class="actions.ActionRegistrar" method="{1}Registrar{2}">
+			<result name="success">/{1}Registrar{2}.jsp</result>
+			<result name="done">/ecampus.jsp</result>
+			<result name="ok">/seeRegistrarstudentList.jsp</result>
+		</action>
+		
+	</package>
+
+</struts>

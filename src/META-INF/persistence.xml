@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="eCampuse_final">
+		<class>jpa.acad_year</class>
+		<class>jpa.course_prerequisite</class>
+		<class>jpa.course_prerequisite_id</class>
+		<class>jpa.course</class>
+		<class>jpa.batch</class>
+		<class>jpa.batch_program_fee_id</class>
+		<class>jpa.batch_program_fee</class>
+		<class>jpa.faculty</class>
+		<class>jpa.fee_master</class>
+		<class>jpa.find_result</class>
+		<class>jpa.grade_modification_id</class>
+		<class>jpa.grade_modification</class>
+		<class>jpa.ip_address</class>
+		<class>jpa.offered_slot_id</class>
+		<class>jpa.offered_slot</class>
+		<class>jpa.offer</class>
+		<class>jpa.paid_fees_id</class>
+		<class>jpa.paid_fees</class>
+		<class>jpa.program_batch_id</class>
+		<class>jpa.program_batch</class>
+		<class>jpa.program</class>
+		<class>jpa.reminder_id</class>
+		<class>jpa.reminder</class>
+		<class>jpa.requirment</class>
+		<class>jpa.slot</class>
+		<class>jpa.student</class>
+		<class>jpa.student_registration_id</class>
+		<class>jpa.student_registration</class>
+		<class>jpa.term_acad_id</class>
+		<class>jpa.term_batch_program_id</class>
+		<class>jpa.term_batch_program</class>
+		<class>jpa.term</class>
+	</persistence-unit>
+</persistence>

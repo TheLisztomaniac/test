@@ -1,0 +1,58 @@
+@charset "ISO-8859-1";
+
+.gridtable, .form {
+	margin : 0 auto;
+	border : 2px solid black;
+}
+
+th {
+	background-color : rgb(105, 162, 221);
+	padding : 10px;
+	color : white;
+}
+
+td {
+	padding : 10px;
+	text-align : center;
+}
+
+.buttonize:link, .buttonize:visited {
+	text-decoration : none;
+	background-color : rgb(250, 134, 105);
+	color : white;
+	display : inline-block;
+	padding : 10px;
+}
+
+.buttonize:hover, .buttonize:active {
+	background-color : rgb(250, 134, 105);
+}
+
+.add-term {
+	background-color : green;
+}
+
+h1 {
+	background-color : rgb(105, 162, 221);
+	color : white;
+	width : 100%;
+	text-align : center;
+	padding : 10px;
+}
+
+.centralize {
+	width : 100%;
+	text-align : center;
+}
+
+.submit-button {
+	text-decoration : none;
+	border : none;
+	background-color : rgb(250, 134, 105);
+	padding : 10px;
+	color : white;
+}
+
+.submit-button:hover, .submit-button:active {
+	background-color : red;
+}
